@@ -1,0 +1,68 @@
+.hero {
+	position: relative;
+
+	.heroImageWrapper {
+		background: url('../../assets/botanicals-hero.jpg') no-repeat;
+		background-size: cover;
+		height: 500px;
+		background-position: 90% 50%;
+		filter: grayscale(30%);
+
+		@media all and (min-width: 768px) {
+			background-position: center;
+		}
+	}
+
+	.heroContent {
+		max-width: 500px;
+		width: 100%;
+		margin: auto;
+		padding: 40px 6vw;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+
+		@media all and (min-width: 768px) {
+			position: absolute;
+			top: 0;
+			padding: 0;
+			margin-left: 6vw;
+			width: 40vw;
+		}
+
+		.heroTitle {
+			margin-bottom: 14px;
+
+			h1 {
+				font-size: 38px;
+				line-height: 1.2em;
+
+				@media all and (min-width: 768px) {
+					font-size: 48px;
+				}
+			}
+		}
+
+		.heroDetails {
+			p {
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.4em;
+				color: #555;
+			}
+			button {
+				background-color: #000;
+				color: white;
+				padding: 14px 20px;
+				letter-spacing: 0.2px;
+				font-size: 0.9em;
+				font-weight: 600;
+				outline: none;
+				border: none;
+				text-transform: uppercase;
+				margin-top: 24px;
+			}
+		}
+	}
+}

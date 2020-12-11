@@ -1,0 +1,50 @@
+.navBar {
+	display: flex;
+	align-items: center;
+	margin: 0 6vw;
+	height: 60px;
+
+	a {
+		text-decoration: none;
+		color: initial;
+	}
+
+	.menu {
+		margin: 4px auto 0 0;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		flex: 1;
+		text-transform: uppercase;
+		letter-spacing: 0.4em;
+		font-weight: 400;
+		font-size: 20px;
+
+		span {
+			display: inline-block;
+			position: relative;
+			font-size: 0.98em;
+			vertical-align: top;
+
+			&:after {
+				content: '';
+				border-bottom: 2px solid rgb(75, 75, 75);
+				width: 17px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				top: 22px;
+			}
+		}
+	}
+
+	.cartIcon {
+		margin: 6px 0 0 auto;
+
+		img {
+			height: 22px;
+		}
+	}
+}

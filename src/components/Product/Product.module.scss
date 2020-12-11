@@ -1,0 +1,98 @@
+.product {
+	display: flex;
+	flex-direction: column;
+
+	.productDetails {
+		text-align: center;
+
+		.productName,
+		.productPrice {
+			display: inline-block;
+			width: 100%;
+			font-size: 1em;
+			line-height: 1.5em;
+			letter-spacing: 0.3px;
+		}
+
+		.productPrice {
+			font-weight: 600;
+			padding-top: 2px;
+		}
+	}
+
+	.imageWrapper {
+		position: relative;
+		height: 100%;
+		margin-bottom: 6px;
+
+		&:hover .overlay {
+			opacity: 1;
+		}
+
+		.overlay {
+			background: rgba(255, 255, 255, 0.3);
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.3s ease-in-out;
+			z-index: 9999;
+		}
+
+		img {
+			object-fit: cover;
+			height: auto;
+			width: 100%;
+			filter: grayscale(50%);
+		}
+
+		span {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			background-color: #000;
+			color: white;
+			padding: 8px 16px;
+			letter-spacing: 0.2px;
+			font-size: 0.9em;
+			font-weight: 600;
+		}
+	}
+
+	button {
+		background-color: #333;
+		color: white;
+		padding: 12px 14px;
+		letter-spacing: 0.6px;
+		font-size: 0.8em;
+		font-weight: 600;
+		outline: none;
+		border: none;
+		text-transform: uppercase;
+		margin-top: 10px;
+		cursor: pointer;
+		width: 80%;
+		max-width: 80%;
+
+		@media all and (min-width: 865px) {
+			width: 70%;
+			max-width: 70%;
+		}
+
+		&:hover {
+			background-color: #000;
+		}
+	}
+
+	.inCart {
+		background-color: #daafa0;
+
+		&:hover {
+			background-color: #daafa0;
+		}
+	}
+}
