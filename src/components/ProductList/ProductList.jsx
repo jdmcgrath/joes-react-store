@@ -7,12 +7,17 @@ const ProductList = (props) => {
 
 	return (
 		<>
-			<section className={styles.productList}>{products.map((product) => {
-			return (
-				console.log(product),
-				<Product product={product} updateInCart={updateInCart} updateQuantity={updateQuantity} />
-			);
-		})}</section>
+			<section className={styles.productList}>
+				{products.map((product) => {
+					return (
+						<Product
+							product={product}
+							updateInCart={updateInCart}
+							updateQuantity={updateQuantity}
+						/>
+					);
+				})}
+			</section>
 		</>
 	);
 };

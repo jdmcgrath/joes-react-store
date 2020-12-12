@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Product.module.scss';
 
 const Product = (props) => {
 	const { product, updateInCart } = props;
-	const { name, price, img, newArrival, inCart } = product;
+
+	const [inCart, setInCart] = useState(product.inCart);
+
+	const addToCart = () => {
+		toggleAddToCart();
+		setInCart(!inCart);
+	};
 
 	const toggleAddToCart = () => updateInCart(product);
 
@@ -11,13 +17,12 @@ const Product = (props) => {
 
 	const getButtonStyle = () => (inCart ? styles.inCart : null);
 
+	const { name, price, img, newArrival } = product;
 	return (
 		<div className={styles.product}>
 			<div className={styles.imageWrapper}>
 				<div className={styles.overlay}>
-					<button className={getButtonStyle()} 
-					onClick={toggleAddToCart}
-					>
+					<button className={getButtonStyle()} onClick={addToCart}>
 						{getButtonText()}
 					</button>
 				</div>

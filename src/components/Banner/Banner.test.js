@@ -1,9 +1,9 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import Banner from "./Banner";
+import React from 'react';
+import { render } from '@testing-library/react';
+import Banner from './Banner';
 
-describe("Banner tests", () => {
-  it("should render", () => {
-    expect(render(<Banner />)).toBeTruthy();
-  });
+describe('Banner tests', () => {
+	it('should render', () => {
+		expect(render(<Banner />)).toBeTruthy();
+	});
 });

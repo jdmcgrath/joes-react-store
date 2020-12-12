@@ -13,7 +13,7 @@ const ShoppingCartItem = (props) => {
 	};
 
 	const updateProductQuantity = (amount) => {
-		setNumber(number += amount);
+		setNumber((number += amount));
 		updateQuantity(product, number);
 	};
 
@@ -28,7 +28,7 @@ const ShoppingCartItem = (props) => {
 						<h2>{name}</h2>
 					</span>
 					<div className={styles.itemRemove}>
-						<p onClick={removeFromCart}>Remove</p>
+						<a onClick={removeFromCart}>Remove</a>
 					</div>
 				</div>
 			</div>

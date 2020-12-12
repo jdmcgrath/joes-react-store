@@ -5,11 +5,11 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: '../assets/product01.jpg',
+		img: 'https://cdn.shopify.com/s/files/1/0073/1489/8980/files/Erato_s_300x.png?v=1606485753',
 		newArrival: false,
-		inCart: true,
-		quantity: 1,
-		total: 9.99,
+		inCart: false,
+		quantity: 0,
+		total: 0,
 	},
 	{
 		id: '02',
@@ -17,7 +17,8 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: '../assets/product02.jpg',
+		img:
+			'https://cdn.shopify.com/s/files/1/0073/1489/8980/products/exprunis_mini_180x.png?v=1606052879',
 		newArrival: true,
 		inCart: false,
 		quantity: 0,
@@ -29,7 +30,7 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: '../assets/product03.jpg',
+		img: 'https://cdn.shopify.com/s/files/1/0073/1489/8980/files/product2_540x.png?v=1605368644',
 		newArrival: false,
 		inCart: false,
 		quantity: 0,
@@ -41,7 +42,8 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: '../assets/product04.jpg',
+		img:
+			'https://cdn.shopify.com/s/files/1/0073/1489/8980/files/instagram_d36d4e07-2619-4778-904f-d1e0ba8739fc_540x.png?v=1606059126',
 		newArrival: false,
 		inCart: false,
 		quantity: 1,
