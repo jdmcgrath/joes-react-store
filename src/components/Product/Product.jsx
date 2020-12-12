@@ -2,8 +2,10 @@ import React from 'react';
 import styles from './Product.module.scss';
 
 const Product = (props) => {
-	const { product, updateInCart, updateQuantity } = props;
+	const { product, updateInCart } = props;
 	const { name, price, img, newArrival, inCart } = product;
+
+	const toggleAddToCart = () => updateInCart(product);
 
 	const getButtonText = () => (!inCart ? 'Add to Cart' : 'Item in Cart');
 
@@ -13,9 +15,8 @@ const Product = (props) => {
 		<div className={styles.product}>
 			<div className={styles.imageWrapper}>
 				<div className={styles.overlay}>
-					<button
-						className={getButtonStyle()}
-						// onClick={addToCart()}
+					<button className={getButtonStyle()} 
+					onClick={toggleAddToCart}
 					>
 						{getButtonText()}
 					</button>

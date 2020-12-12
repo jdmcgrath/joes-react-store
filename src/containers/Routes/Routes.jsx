@@ -15,7 +15,12 @@ const Routes = (props) => {
 				updateInCart={updateInCart}
 				updateQuantity={updateQuantity}
 			/>
-			<ShoppingCart path="cart" />
+			<ShoppingCart
+				path="cart"
+				products={products}
+				updateInCart={updateInCart}
+				updateQuantity={updateQuantity}
+			/>
 		</Router>
 	);
 };

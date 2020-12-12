@@ -1,27 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Routes from './containers/Routes';
 import NavBar from './components/NavBar';
 
 import catalog from './data/products';
 
 function App() {
+
+	
 	const [products, setProducts] = useState(catalog);
-
-	//
+	
 	const updateInCart = (product) => {
-		products.inCart = !products.inCart;
-		products.quantity = products.inCart ? 1 : 0;
+		product.inCart = !product.inCart;
+		product.quantity = product.inCart ? 1 : 0;
 		updateTotal(product);
+		console.log(product)
 	};
-
+	
 	const updateQuantity = (product, quantity) => {
-		products.quantity = quantity;
-		products.quantity > 0 ? updateTotal(product) : updateInCart(product);
+		product.quantity = quantity;
+		product.quantity > 0 ? updateTotal(product) : updateInCart(product);
 	};
-
+	
 	const updateTotal = (product) => {
-		products.total = products.price * products.quantity;
-		setProducts(product);
+		product.total = product.price * product.quantity;
+		setProducts(products)
+		console.log(product.total)
 	};
 
 	return (

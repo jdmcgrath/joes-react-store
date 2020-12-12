@@ -5,11 +5,11 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: require('../assets/product01.jpg'),
+		img: '../assets/product01.jpg',
 		newArrival: false,
-		inCart: false,
-		quantity: 0,
-		total: 0,
+		inCart: true,
+		quantity: 1,
+		total: 9.99,
 	},
 	{
 		id: '02',
@@ -17,7 +17,7 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: require('../assets/product02.jpg'),
+		img: '../assets/product02.jpg',
 		newArrival: true,
 		inCart: false,
 		quantity: 0,
@@ -29,7 +29,7 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: require('../assets/product03.jpg'),
+		img: '../assets/product03.jpg',
 		newArrival: false,
 		inCart: false,
 		quantity: 0,
@@ -41,7 +41,7 @@ const products = [
 		price: 9.99,
 		description:
 			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. A nostrum excepturi aliquid tenetur cumque et aliquam quia.',
-		img: require('../assets/product04.jpg'),
+		img: '../assets/product04.jpg',
 		newArrival: false,
 		inCart: false,
 		quantity: 1,
