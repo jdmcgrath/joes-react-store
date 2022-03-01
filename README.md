@@ -23,6 +23,8 @@ The project is open-source, so feel free to pick and choose bits you like to hos
 
 If the quantity of an item is changed inside the cart, the total cart balance does not update (this is to do with state not rerendering the component when changed) and will be changed in a future update
 
+### Running the project
+
 If you wish to run the project for yourself after downloading the code <br />
 In the project directory, you can run:
 
